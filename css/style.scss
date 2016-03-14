@@ -21,6 +21,7 @@ body {
 
 }
 
+
 .row{
   background-color: #F3F3F3;
   overflow: hidden;
@@ -94,9 +95,11 @@ body {
     float: left;
     width:100%;
 
+
     li{
         display: inline-block;
         padding-left: 1em;
+        text-decoration: none;
 
       }
       .tiy_logo{
@@ -111,6 +114,7 @@ body {
 
   .banner_nav_profile{
     float: right;
+    color: $primary-color;
 
     li{
         display: inline-block;
@@ -130,16 +134,31 @@ body {
     margin:0 auto;
     box-sizing: border-box;
     background-color: #FFFFFF;
-    
-    
-    .about_chapter{
-      color: $secondary-color;
+    border-bottom:1px solid $primary-color;
+      
+
+      .info_list{
+
+
+
+        
+
+        a{
+        color: $secondary-color;
+        text-decoration: none;
+      }
+      }
+    .organizers{
+      a{
+
+      
+        color: $secondary-color;
+        text-decoration: none;
+      }
+      }
     }
 
-}
-    a{
-      text-decoration:none;
-    }
+
 .mid_col{
     margin: 0 auto;
     background-color: #FFFFFF;
