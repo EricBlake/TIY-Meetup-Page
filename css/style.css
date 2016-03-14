@@ -6,7 +6,8 @@ body {
   background-color: #F3F3F3;
   overflow: hidden;
   box-sizing: border-box;
-  margin: 2%; }
+  margin: 2%;
+  margin: 1em; }
   .row .top_leftnav_list {
     list-style: none;
     float: left;
@@ -41,43 +42,44 @@ body {
         text-decoration: none;
         color: #272822; }
 
-.row2 {
-  background-color: #F3F3F3;
-  margin: 2em;
-  box-sizing: border-box;
-  clear: both;
-  overflow: hidden;
-  max-width: 80%; }
-  .row2 .banner_nav {
-    list-style: none;
-    float: left;
-    width: 100%; }
-    .row2 .banner_nav li {
-      display: inline-block;
-      padding-left: 1em; }
-      .row2 .banner_nav li a {
-        text-decoration: none; }
-    .row2 .banner_nav .tiy_logo {
-      width: 80%;
-      margin: 0 auto; }
-  .row2 .banner_nav_profile {
-    float: right; }
-    .row2 .banner_nav_profile li {
-      display: inline-block;
-      padding-left: 1em; }
-      .row2 .banner_nav_profile li a {
-        text-decoration: none; }
+.banner_nav {
+  list-style: none;
+  float: left;
+  width: 100%; }
+  .banner_nav li {
+    display: inline-block;
+    padding-left: 1em; }
+  .banner_nav .tiy_logo {
+    width: 100%;
+    margin: 0 auto; }
+  .banner_nav a {
+    color: #272822; }
 
-.row3 {
-  background-color: #F3F3F3;
-  box-sizing: border-box;
+.banner_nav_profile {
+  float: right; }
+  .banner_nav_profile li {
+    display: inline-block;
+    padding-left: 1em; }
+    .banner_nav_profile li a {
+      text-decoration: none; }
+
+.left_col {
   margin: 0 auto;
-  overflow: hidden;
-  .left_col-margin: 1em;
-  .left_col-box-sizing: border-box;
-  .left_col-width: auto; }
-  .row3 a {
-    text-decoration: none; }
+  box-sizing: border-box;
+  background-color: #FFFFFF; }
+  .left_col .about_chapter {
+    color: #6FBBB7; }
+
+a {
+  text-decoration: none; }
+
+.mid_col {
+  margin: 0 auto;
+  background-color: #FFFFFF; }
+
+.right_col {
+  margin: 0 auto;
+  background-color: #FFFFFF; }
 
 .col {
   box-sizing: border-box;
@@ -88,7 +90,7 @@ body {
   font-stretch: Helvetica; }
 
 .col-1 {
-  width: 6.86666666667%;
+  width: 6.66%;
   background-color: #FFFFFF;
   box-sizing: border-box; }
 
@@ -107,7 +109,11 @@ body {
   border: 1px solid #ccc; }
 
 .col-3 {
-  width: 23.8%; }
+  max-width: 23.8%;
+  float: left;
+  margin: 0 auto;
+  background-color: #F3F3F3;
+  overflow: hidden; }
 
 .col-4 {
   width: 32.2666666667%; }
@@ -142,7 +148,7 @@ body {
 
 .col-12 {
   width: 100%;
-  margin-left: 0;
+  margin: 0 auto;
   background-color: #ffffff; }
 
 @media (min-width: 350px) {

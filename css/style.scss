@@ -2,6 +2,8 @@ $tot-width: 100%;
 $num-col: 12;
 $gut-width: 2%;
 $font-family: Helvetica;
+$primary-color:#272822;
+$secondary-color:#6FBBB7;
 
 $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
@@ -24,6 +26,7 @@ body {
   overflow: hidden;
   box-sizing:border-box;
   margin: $gut-width;
+  margin: 1em;
   
     
     .top_leftnav_list{
@@ -70,26 +73,21 @@ body {
         padding-left: 1em;
         padding-bottom:2em;
 
+
         img{
           size:16px;
         }
 
       a{
         text-decoration: none;
-        color: #272822;
+        color: $primary-color;
       }
       }
     }
 }
 
-.row2{
-  background-color: #F3F3F3;
-  margin: 2em;
-  box-sizing: border-box;
-  clear: both;
-  overflow: hidden;
-  max-width: 80%;
 
+  
 
   .banner_nav{
     list-style: none;
@@ -100,15 +98,14 @@ body {
         display: inline-block;
         padding-left: 1em;
 
-
-
-      a{
-        text-decoration: none;
-      }
       }
       .tiy_logo{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
+      }
+      a{
+        
+        color: $primary-color;
       }
   }
 
@@ -125,26 +122,33 @@ body {
       }
       }
   }
-}
 
 
 
-.row3{
-  background-color: #F3F3F3;
-  box-sizing: border-box;
-  margin: 0 auto;
-  overflow: hidden;
 
-  .left_col:{
-    margin:1em;
+  .left_col{
+    margin:0 auto;
     box-sizing: border-box;
-    width: auto;
-
+    background-color: #FFFFFF;
+    
+    
+    .about_chapter{
+      color: $secondary-color;
+    }
 
 }
     a{
       text-decoration:none;
     }
+.mid_col{
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+}
+
+.right_col{
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 .col{
@@ -159,7 +163,7 @@ body {
 
 
 .col-1 {
-    width: 6.86666666667%;
+    width: 6.66%;
     background-color: #FFFFFF;
     box-sizing: border-box;
 
@@ -182,7 +186,11 @@ body {
 }
 
 .col-3 {
-    width: 23.8%;
+    max-width: 23.8%;
+    float: left;
+    margin: 0 auto;
+    background-color:#F3F3F3;
+    overflow: hidden;
 }
 
 .col-4 {
@@ -226,7 +234,7 @@ body {
 
 .col-12 {
     width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
     background-color:#ffffff;
 }
 
@@ -277,5 +285,6 @@ body {
   }
   .col-12 {
      @include grid(12);
+
   }
 }
