@@ -1,13 +1,19 @@
 body {
   background-color: #F3F3F3;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  margin: 0; }
+
+main {
+  max-width: 850px;
+  margin: 0 auto; }
+
+.middle-wrapper {
+  background-color: #fff;
+  overflow: hidden; }
 
 .row {
-  background-color: #F3F3F3;
   overflow: hidden;
-  box-sizing: border-box;
-  margin: 2%;
-  margin: 1em; }
+  box-sizing: border-box; }
   .row .top_leftnav_list {
     list-style: none;
     float: left;
@@ -45,25 +51,32 @@ body {
 .banner_nav {
   list-style: none;
   float: left;
-  width: 100%; }
+  width: 50%;
+  padding: 0; }
   .banner_nav li {
     display: inline-block;
     padding-left: 1em;
     text-decoration: none; }
-  .banner_nav .tiy_logo {
-    width: 100%;
-    margin: 0 auto; }
   .banner_nav a {
     color: #272822; }
 
 .banner_nav_profile {
   float: right;
+  width: 50%;
+  padding: 0;
   color: #272822; }
+  .banner_nav_profile ul {
+    float: right; }
   .banner_nav_profile li {
     display: inline-block;
     padding-left: 1em; }
     .banner_nav_profile li a {
       text-decoration: none; }
+
+.tiy_logo {
+  margin: 0 auto; }
+  .tiy_logo img {
+    width: 100%; }
 
 .left_col {
   margin: 0 auto;
@@ -102,13 +115,6 @@ body {
   width: 15.3333333333%;
   float: left;
   margin: 0 auto;
-  box-sizing: border-box;
-  border: 1px solid #ccc; }
-
-.col-2b {
-  width: 15.3333333333%;
-  float: left;
-  margin: 1em solid #F3F3F3;
   box-sizing: border-box;
   border: 1px solid #ccc; }
 
